@@ -374,11 +374,11 @@ const VueCountdownTimer = {
       },
 
       mounted() {
-        window.addEventListener('focus', (this.onFocus = this.update.bind(this)));
+        //window.addEventListener('focus', (this.onFocus = this.update.bind(this)));
       },
 
       beforeDestroy() {
-        window.removeEventListener('focus', this.onFocus);
+        //window.removeEventListener('focus', this.onFocus);
         clearTimeout(this.timeout);
       }
     })
